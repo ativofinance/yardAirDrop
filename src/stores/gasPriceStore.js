@@ -11,7 +11,7 @@ class GasPriceStore {
     { label: 'instant', value: '21' },
   ];
   @observable selectedGasPrice = '22'
-  @observable selectedGasShare = '50'
+  @observable selectedGasShare = '10'
   gasPricePromise = null;
   constructor(rootStore) {
     this.getGasPrices()

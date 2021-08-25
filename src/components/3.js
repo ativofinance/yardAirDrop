@@ -384,11 +384,10 @@ export class ThirdStep extends React.Component {
         <div>
           <div className="description">
             <ol>
-              <li>Choose <strong>Gas Sharing</strong></li>
               <li>Verify addresses and values</li>
               <li>Press the <strong>Next</strong> button</li>
             </ol>
-            <p>
+            <p style={{ display: "none" }}>
               <strong>Gas Sharing</strong> is a portion of gas saved by this service that you are OK to tip
             </p>
           </div>
@@ -409,7 +408,7 @@ export class ThirdStep extends React.Component {
               </div>
             </div>
 
-            <div className="form-inline">
+            <div className="form-inline" style={{ display: "none" }}>
               <div className="form-inline-i form-inline-i_gas-sharing">
                 <label htmlFor="gas-sharing" className="multisend-label">Saved Gas Sharing</label>
                 <Select.Creatable
@@ -434,7 +433,7 @@ export class ThirdStep extends React.Component {
               {
                 this.renderTokenBalance()
               }
-              {this.renderTransferGasInfo()}
+              {/* {this.renderTransferGasInfo()} */}
               <div className="send-info-i">
                 <p>Total Number of tx Needed</p>
                 <p className="send-info-amount">{this.tokenStore.totalNumberTx}</p>
@@ -448,8 +447,8 @@ export class ThirdStep extends React.Component {
                 <p>Balance, ETH</p>
                 <p className="send-info-amount">{this.tokenStore.ethBalance}</p>
               </div>
-              {this.renderMultisendGasInfo()}
-              {this.renderSavingsGasInfo()}
+              {/* {this.renderMultisendGasInfo()} */}
+              {/* {this.renderSavingsGasInfo()} */}
             </div>
           </div>
           <RecipientsDataTable data={this.tokenStore.addressesData} tokenSymbol={this.tokenStore.tokenSymbol} />
