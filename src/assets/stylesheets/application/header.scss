@@ -1,0 +1,40 @@
+.header {
+  margin-bottom: 40px;
+  padding: 20px 0;
+  border-bottom: 1px solid fade-out(#95d5ff, 0.9);
+
+  @media (max-width: $mobile--width) {
+    margin-bottom: 30px;
+  }
+
+  .multisend-container {
+    @extend %flex-between;
+    align-items: center;
+  }
+
+  .multisend-label {
+    @extend %control-font;
+    display: block;
+    margin-bottom: 20px;
+    text-align: right;
+    width: 100%;
+
+    .form_header & {
+      margin-right: 15px;
+      margin-bottom: 0;
+    }
+  }
+
+  &-logo {
+    @include image-2x('../images/logo.png');
+    display: block;
+    width: 253px;
+    height: 36px;
+    background-image: url(../images/logo.png);
+
+    @media (max-width: $container-responsive--width) {
+      width: 36px;
+      background-size: 200px 100%;
+    }
+  }
+}

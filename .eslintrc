@@ -1,0 +1,8 @@
+{    
+  "parserOptions": {
+     "ecmaFeatures": {
+       "legacyDecorators": true
+     }
+   }
+}
+
