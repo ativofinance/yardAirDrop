@@ -2,7 +2,7 @@
   "name": "multi-sender-app",
   "version": "0.1.0",
   "license": "GPL3",
-  "homepage": "https://github.com/ativofinance/yardAirDrop",
+  "homepage": "https://nftyard.io/airdrop",
   "dependencies": {
     "@metamask/onboarding": "^1.0.0",
     "bignumber.js": "^6.0.0",
